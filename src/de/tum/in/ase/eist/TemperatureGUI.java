@@ -11,7 +11,7 @@ import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 
 // TODO Part 1.5: implement Observer<Double>
-public abstract class TemperatureGUI implements Observer<Double>{
+public abstract class TemperatureGUI implements Observer<Double> {
 
 	private static final int BORDER_SIZE = 4;
 	private static final int WIDTH = 200;
