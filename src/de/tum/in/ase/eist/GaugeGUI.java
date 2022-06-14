@@ -1,8 +1,6 @@
 package de.tum.in.ase.eist;
 
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Point;
+import java.awt.*;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -47,7 +45,11 @@ public class GaugeGUI {
 	//  and then invoke repaint() on the gaugeCanvas
 
 	public void setCurrentValue(int level) {
-		this.currentValue = level;
+		this.currentValue = intValue(level);
+	}
+
+	private int intValue(int level) {
+		return 0;
 	}
 
 	public int getCurrentValue() {
@@ -55,6 +57,10 @@ public class GaugeGUI {
 	}
 
 	private class GaugeCanvas extends JPanel {
+		@Override
+		public void repaint(Rectangle r) {
+			super.repaint(r);
+		}
 
 		private static final int MAX_VALUE = 150;
 		private static final int MIN_VALUE = -20;

@@ -13,11 +13,10 @@ public class TemperatureModel extends Subject<Double> {
 	public void setC(double tempC) {
 		celsiusTemperature = tempC;
 		//TODO Task 1.2: Notify all observers about the temperature change
-        notifyObservers();
+
 	}
 
-	private void notifyObservers() {
-	}
+
 
 	public void increaseF(double amount) {
 		final double currentFahrenheit = TemperatureConverter.convertCelsiusToFahrenheit(celsiusTemperature);
