@@ -22,5 +22,6 @@ public abstract class Subject<T> {
 	protected void notifyObservers(final T newState) {
 		//TODO Task 1.1: Iterate through the observers and notify every observer about the new state
 		Iterator<Observer<T>> observerIterator = observers.iterator();
+
 	}
 }
